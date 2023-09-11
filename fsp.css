@@ -1,0 +1,151 @@
+
+.menu{
+    background-color: white;
+    overflow: hidden;
+    font-size: medium;
+    font-family: hind,simhei,verdana,Helvetica,sans-serif;;
+    text-align: center;
+    width: 205vh;
+}
+
+.menu a{
+    color:black;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    padding-left: 2em;
+
+}
+
+.logo{
+    height:4.5em;
+    display:inline-block;
+    vertical-align: middle;   
+}
+
+.menuLeft{
+    float:left;
+}
+
+.menuRight{
+    float:right;
+    padding-top:20px;
+}
+
+.menu button{
+    padding: 9px 30px;
+    background-color: #5a5a5a;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 30px;
+    align-content: center;
+    cursor: pointer;
+
+    &:hover{
+        background-color: black;
+    }
+}
+
+.menu a:hover{
+    color: lightgreen;
+}
+
+.bg_preview{
+    width: 98vw;
+    height: 76.5vh;
+    background-image:url("images/bg_body.png");
+    background-repeat: no-repeat; 
+    filter: blur(.3em); 
+    background-size: cover;
+    position: relative;
+}
+
+.slideshow-container{
+    position: absolute;
+    transform: translateY(-31em);
+    width: 70vw;
+    z-index: 1;
+
+}
+
+.mySlides{ 
+
+    &:last-of-type{
+        display: none;
+        position: relative;
+    }
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+
+    &.prev{
+            left: 2em;
+            border-radius: .5em 0 0 .5em;
+            margin-left: 2em;
+        }
+
+    &.next{
+        right: 1em;
+        border-radius: 0 .5em .5em 0;
+        }
+    
+    &:hover{
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+        }
+}
+
+
+.btn-container{
+    transform: translate(7rem, -2.5rem);
+    width: 30vh;
+    position: relative;
+    z-index: 3;
+
+    .dot{
+        height: 2vh;
+        width: 1vw;
+        background-color: black;
+        border-radius: 50%;
+        transition: background-color .5s ease;
+        display: inline-block;
+
+        &:hover{
+            background-color: white;
+        }
+    }
+}
+
+.besideSlide{
+    width: 25.3vw;
+    position: absolute;
+
+    .makeComic{
+        transform: translate(56em, -29.7em);
+        height: 32vh;
+    }
+
+    .QR{
+        transform: translate(58.5em, -30.7em);
+        height: 33.7vh;
+    }
+
+    .QR, .makeComic{
+            display: flex;
+            flex-direction: column;
+        }
+
+}
+
